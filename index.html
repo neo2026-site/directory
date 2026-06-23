@@ -52,7 +52,7 @@
                 </div>
                 <div class="space-y-2">
                     <label class="text-[10px] font-black text-slate-400 uppercase ml-1">담당자명</label>
-                    <input type="text" id="checkPassword" placeholder="신청 시 입력한 담당자 성함" class="w-full px-5 py-4 rounded-2xl border-2 border-slate-100 focus:border-brand-500 outline-none font-bold text-lg transition-colors">
+                    <input type="text" id="checkPassword" placeholder="신청 시 입력한 담당자 성함 및 직급" class="w-full px-5 py-4 rounded-2xl border-2 border-slate-100 focus:border-brand-500 outline-none font-bold text-lg transition-colors">
                 </div>
                 <button onclick="fetchMyApplications()" id="btnFetch" class="w-full energy-gradient text-white py-5 rounded-2xl font-black text-lg hover:opacity-90 transition-all shadow-lg shadow-brand-500/30">내역 조회하기</button>
                 
@@ -283,7 +283,7 @@
             }
 
             btn.disabled = true;
-            btn.innerHTML = '<i class="fa-solid fa-spinner spinner"></i> 클라우드 조회 중...';
+            btn.innerHTML = '<i class="fa-solid fa-spinner spinner"></i> 조회 중...';
             resultDiv.innerHTML = '';
 
             try {
